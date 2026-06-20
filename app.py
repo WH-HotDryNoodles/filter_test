@@ -236,7 +236,7 @@ with tab_strategy:
         col_f1, col_f2 = st.columns(2)
         
         with col_f1:
-            with st.expander("💸 维换手量特征过滤", expanded=False):
+            with st.expander("💸 换手量特征过滤", expanded=False):
                 enable_vol = st.checkbox("激活：换手量变化筛选")
                 eval_window = st.number_input("追溯期(天)", value=30, step=5)
                 vol_ratio = st.slider("当日换手/前日换手 倍数大于：", 1.5, 5.0, 2.5)
